@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a1e78d5195.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/R.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Top Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="first-section">
+                <div class="header">
+                    <h1>Hi, I'm <span>Rafey</span>!</h1>
+                    <h4 id="uni-info">CS Student @ <span>UWO</span></h4>
+                </div>
+                <div class="first-img">
+                    <img src="images/IMG_5587.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_5264.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-me">About Me</h1>
+                    <p>My name is Rafey Islam, and I am currently pursuing a Bachlor's in Computer Science at Western University. 
+                        I am passionate about building innovative solutions within the field of Software Engineering and Data Science, 
+                    along with transforming complex problems into user-friendly applications. I look forward to connecting and working with people who are
+                 also passionate about innovative Software Design. I'm excited to continue exploring the world of Computer Science and discovering what else interests me!</p>
+                 <div class="tabs">
+                    <p class="tab active" onclick="opened('skills')">Skills</p>
+                    <p class="tab" onclick="opened('experience')">Experience</p>
+                    <p class="tab" onclick="opened('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, Python, C++, C, SQL, Bash, Linux</li>
+                        <li><span>Web Development</span><br>JavaScript, React.js, JQuery, HTML/CSS</li>
+                        <li><span>Libraries</span><br>Matplotlib, Seaborne, Pandas, NumPy, Scikit-Learn, SciPy</li>
+                        <li><span>Software Development</span><br>Agile, GitHub, AWS</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Software Engineer @ Prosperity Networks (Summer 2023)</span><br>
+                        - Developed a software enabling users to input company names, parsed them, and utilized the United States Securities and Exchange Commission (SEC) financial data APIs<br><br>
+                        - Provided users with the latest financial results from quarterly (10Q) and annual (10K) financial statements, including financial ratios obtained through web scraping from Yahoo Finance<br><br>
+                        - Implemented the project in Python using the Agile framework, incorporating software engineering best practices such as code documentation, Business Requirements Documents (BRDs), application architecture diagrams, and iterative User Acceptance Testing (UAT)<br><br>
+                        - Utilized modular programming techniques, including functions, Pandas dataframes, Tkinter GUI, and Matplotlib plots in Python, to offer users data visualizations, trend analysis, and an intuitive user interface</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span>Degree</span><br>Honours Specialization in CS @ Uwo</li>
+                        <li><span>Courses</span><br>Data Structures & Algorithms, Software Tools & System Programming, Applied Logic for CS, Intro to Software Engineering, Computer Organization & Architecture, Statistics, Linear Algebra</li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+           <h1 class="about-me">Top Skills</h1>
+           <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React.js</h2>
+                    <p>Learned from Udemys Complete Web Development Bootcamp 2023. Designed an interactive app to keep notes</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h2>Data Science</h2>
+                    <p>Learned from the IBM Data Science Professional Certificate. Proficient with multiple DS Tools, Python Libraries, & Regression Models</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Python & Java</h2>
+                    <p>Learned from Univesrity courses & self taught. Proficient with Data Structures & Algorithms</p>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="about-me">Personal Projects</h1>
+            <div class="projects-list">
+                <div class="projects">
+                    <img src="images/nasaML.png">
+                    <div class="layer">
+                        <h3>SpaceX Falcon 9 Predictions</h3>
+                        <p>Applied ML/AI techniques using ScikitLearn and SciPy to find patterns in data. Used Logistic Regression to predict whether a landing would be succesful or not</p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/chrome-extension.png">
+                    <div class="layer">
+                        <h3>Chrome Extension (Bookmarks)</h3>
+                        <p>Developed using HTML/CSS/JavaScript & JQuery. Implented functionality & user-friendly interface to save and delete links. Saved data in Chrome Local Storage API</p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/webgame.jpg">
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>Developed using HTML/CSS/JavaScript. Utilized DOM manipulation to enhance interactive aspects. Used arrays to store/manage game data</p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <img src="images/websitelogo.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Developed using HTML/CSS/JavaScript. Utilized web development to turn my resume into a portfolio website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="about-me">Connect With Me</h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rafey-islam-69b19128b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Rafey-04" target="_blank"><i class="fa-brands fa-square-github"></i></i></a>
+                    </div>
+                    <a href="images/Rafeys Resume.pdf" target="_blank" class="btn btn2">View CV/Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opened(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzlCXsLe1vVJ1SZvXsLurhBvAKEdl7Zs5WHil79rCJZWwF4ECSVB2c4ZsA9aBrCEqFn/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
